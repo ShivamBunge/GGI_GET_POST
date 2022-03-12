@@ -1,7 +1,6 @@
 
-.cards{
-   
-    float: left;
+.card{
+    border-radius: 20px;
     margin: 20px;
     
 }

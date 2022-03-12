@@ -2,10 +2,11 @@ import React from "react";
 import  ReactDOM  from "react-dom";
 import '../cards.css';
 const size={ width: "15rem"};
+
 function Card(props) {
     return(
     <>
-    <div className="cards">
+   
     <div className="card" style={size}>
         <img src={props.img} className="card-img-top" alt="..."/>
             <div className="card-body">
@@ -15,7 +16,7 @@ function Card(props) {
             </div>
 
     </div>
-    </div>
+    
     </>
     )
 }

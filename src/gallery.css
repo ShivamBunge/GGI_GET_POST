@@ -3,3 +3,8 @@
     width: 70%;
     justify-content: center;
 }
+@media(max-width:500px){
+    .gall{
+        width: 90%;
+    }
+}

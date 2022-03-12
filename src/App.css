@@ -7,7 +7,14 @@
   margin:40px auto;
   width: 70%;
   justify-content: center;
-  padding: 30px;
-  background-color: rgb(32, 122, 23);
-  border-radius: 40px;
+  padding: 10px;
+  background-color: rgb(123, 255, 83);
+  border-radius: 40px; 
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .cardContainer{
+    width: 90%;
+  }
 }
