@@ -16,6 +16,7 @@ function App() {
 
       {/* using map function ..defining custom function to map corresponding values to each card automatically
       depending on num of objects in arr of sData */}
+      <div className='cardContainer'>
       {sData.map(function ncard(val){  //can use arrow function as well
            return <Card
            key={val.id}
@@ -24,6 +25,8 @@ function App() {
            img={val.imgsrc}          
            />
       })}
+      </div>
+      
       <Gallery/>
     </>
    

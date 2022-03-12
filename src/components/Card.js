@@ -13,7 +13,7 @@ function Card(props) {
                 <p className="card-text">{props.description}.</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
-            
+
     </div>
     </div>
     </>
