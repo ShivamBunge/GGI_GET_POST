@@ -16,6 +16,7 @@ function App() {
       depending on num of objects in arr of sData */}
       {sData.map(function ncard(val){  //can use arrow function as well
            return <Card
+           key={val.id}
            title={val.sname}
            description={val.descrip}
            img={val.imgsrc}          
