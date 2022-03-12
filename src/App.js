@@ -1,5 +1,6 @@
 import './App.css';
 import Card from './components/Card';
+import Gallery from './components/Gallery';
 import sData from './sData';
 
 
@@ -7,6 +8,7 @@ import sData from './sData';
 function App() {
   return (
     <>
+      <h2>HI THERE</h2>
      {/* <Card 
       title={sData[0].sname}      // normal way of rendering each card and passing data 
       description={sData[0].descrip}
@@ -22,6 +24,7 @@ function App() {
            img={val.imgsrc}          
            />
       })}
+      <Gallery/>
     </>
    
   );

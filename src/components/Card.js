@@ -1,7 +1,7 @@
 import React from "react";
 import  ReactDOM  from "react-dom";
 import '../cards.css';
-const size={ width: "18rem"};
+const size={ width: "15rem"};
 function Card(props) {
     return(
     <>
@@ -13,6 +13,7 @@ function Card(props) {
                 <p className="card-text">{props.description}.</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
+            
     </div>
     </div>
     </>
