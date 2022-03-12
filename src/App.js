@@ -8,7 +8,7 @@ import sData from './sData';
 function App() {
   return (
     <>
-      <h2>HI THERE</h2>
+      <h2 className='heading'>Photo Gallery</h2>
      {/* <Card 
       title={sData[0].sname}      // normal way of rendering each card and passing data 
       description={sData[0].descrip}
