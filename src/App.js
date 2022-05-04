@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
 
       <nav className="navbar navbar-expand-lg navbar-dark  ps-1">
-        <a className="navbar-brand" href="#">Global Government Initiative</a>
+        <a className="navbar-brand" href="#">Global Governance Initiative</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
