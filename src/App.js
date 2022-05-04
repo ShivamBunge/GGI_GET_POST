@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 //used for rendering app component
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
 
       <nav className="navbar navbar-expand-lg navbar-dark  ps-1">
         <a className="navbar-brand" href="#">Global Government Initiative</a>
@@ -32,7 +32,7 @@ function App() {
         <Route exact path='/' element={< UseEffectAPI />}></Route>
         <Route exact path='/contact' element={< Contact />}></Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 
