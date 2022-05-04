@@ -1,35 +1,38 @@
-import './App.css';
-import Card from './components/Card';
-import Gallery from './components/Gallery';
-import sData from './sData';
-
-
+import './Styles/App.css';
+import React from 'react';
+import UseEffectAPI from './components/useEffectAPI/useEffectAPI';
+import Contact from './components/Contact/Contact';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 //used for rendering app component
 function App() {
   return (
-    <>
-      <h2 className='heading'>Photo Gallery</h2>
-     {/* <Card 
-      title={sData[0].sname}      // normal way of rendering each card and passing data 
-      description={sData[0].descrip}
-      img= {sData[0].imgsrc}/> */}
+    <BrowserRouter>
 
-      {/* using map function ..defining custom function to map corresponding values to each card automatically
-      depending on num of objects in arr of sData */}
-      <div className='cardContainer'>
-      {sData.map(function ncard(val){  //can use arrow function as well
-           return <Card
-           key={val.id}
-           title={val.sname}
-           description={val.descrip}
-           img={val.imgsrc}          
-           />
-      })}
-      </div>
-      
-      <Gallery/>
-    </>
-   
+      <nav className="navbar navbar-expand-lg navbar-dark  ps-1">
+        <a className="navbar-brand" href="#">Global Government Initiative</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact Us</Link>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+      <Routes>
+        <Route exact path='/' element={< UseEffectAPI />}></Route>
+        <Route exact path='/contact' element={< Contact />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

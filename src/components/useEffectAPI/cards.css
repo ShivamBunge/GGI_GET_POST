@@ -1,0 +1,14 @@
+
+.card{
+    background-color: rgba(0, 43, 68, 0.986);
+    /* background-color: rgb(83, 0, 17);
+    background-color: rgb(2, 2, 56); */
+    margin: 20px;
+}
+.card:hover{
+    box-shadow: 10px 10px 50px 15px rgb(22, 21, 21);
+   
+}
+h5{
+    color:white;
+}
